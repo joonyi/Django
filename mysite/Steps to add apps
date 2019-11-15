@@ -1,0 +1,20 @@
+Steps to add apps
+1. C:\Users\Rain\django\mysite> python manage.py startapp weather
+2. settings.py, INSTALLED_APPS, add 'weather'
+3. create templates\weather\weather.html
+4. In mysite\urls.py, add in urlpatterns, path('', include('weather.urls'))
+5. copy from settings\urls to weather\urls, keep the essential part
+6. create function index in views.py
+	- register on openweathermap to get an API
+7. Add in models.py
+8. makemigrations
+9. migration
+
+
+=========================================
+sqlite command
+sqlite3 db.sqlite3
+.tables
+select * from weather_city;
+delete from weather_city where id=5;
+.exit
