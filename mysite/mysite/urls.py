@@ -27,7 +27,5 @@ urlpatterns = [
     url(r'^api/users_list/$', UserList.as_view(), name='user_list'),
     url(r'^api/users_list/(?P<job_seeker_id>\d+)/$', UserDetail.as_view(), name='user_list'),
     url(r'^api/auth/$', UserAuthentication.as_view(), name='User Authentication API'),
-    path('employee/', include('employee.urls')),
-    path('djangonautic/', include('djangonautic.urls')),
-    
+    path('employee/', include('employee.urls')),    
 ]
