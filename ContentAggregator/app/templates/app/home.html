@@ -1,0 +1,56 @@
+{% extends 'app/links.html' %}
+
+{% load static%}
+
+{% block content %}
+
+<div class="container ">
+
+    <h1>Covid Medium News</h1>
+    <div class="card-columns" style="padding: 10px; margin: 20px;">
+    {% for p in covidcontent %}
+        <div class="card" style="width: 18rem; border:5px black solid">
+            <!-- <img class="card-img-top" src="{{p.img}}" alt="Card image cap"> -->
+
+            <div class="card-body">
+            <h5 class="card-title">{{p.headline}}</h5>
+            <a class="pubDate">{{p.pubDate}}</a>
+            <a href="{{p.url}}">For more info click here </a>
+
+            </div>
+        </div>
+    {% endfor %}
+    </div>
+
+    <h1>Covid Google News</h1>
+    <div class="card-columns" style="padding: 10px; margin: 20px;">
+    {% for p in covidgooglenewscontent %}
+        <div class="card" style="width: 18rem; border:5px black solid">
+            <!-- <img class="card-img-top" src="{{p.img}}" alt="Card image cap"> -->
+
+            <div class="card-body">
+            <h5 class="card-title">{{p.headline}}</h5>
+            <a class="pubDate">{{p.pubDate}}</a>
+            <a href="{{p.url}}">For more info click here </a>
+
+            </div>
+        </div>
+     {% endfor %}
+     </div>
+
+     <h1>Covid Malaysiakini</h1>
+     <div class="card-columns" style="padding: 10px; margin: 20px;">
+     {% for p in covidmalaysiakinicontent %}
+         <div class="card" style="width: 18rem; border:5px black solid">
+             <!-- <img class="card-img-top" src="{{p.img}}" alt="Card image cap"> -->
+
+             <div class="card-body">
+             <h5 class="card-title">{{p.headline}}</h5>
+             <a class="pubDate">{{p.pubDate}}</a>
+             <a href="{{p.url}}">For more info click here </a>
+             </div>
+         </div>
+      {% endfor %}
+      </div>
+
+{% endblock %}
