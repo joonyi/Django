@@ -5,29 +5,6 @@ import feedparser
 
 # Create your views here.
 def updatepython(request):
-    #-------python----------------
-    # url = feedparser.parse(
-    #         "https://medium.com/feed/tag/python"
-    #     )
-    # for i in range(len(url.entries)):
-    #     info = url.entries[i]
-    #     content= PyContent()
-    #     content.headline= info.title
-    #     #-----finding image link
-    #     desc = info.description
-    #     start=desc.find("img src=")
-    #     end=desc.find("width")
-
-    #     print(desc[end:])
-    #     desc=desc[start+9:end-2:]
-    #     print("-----------------------------")
-    #     print(desc)
-
-    #     #---------------
-    #     content.img = desc
-    #     content.url  = info.link
-    #     content.save()
-
     return redirect('/')
 
 
@@ -94,29 +71,6 @@ def updateMalaysiakini(request):
 
 
 def updateprog(request):
-    #-------python----------------
-    # url = feedparser.parse(
-    #         "https://medium.com/feed/tag/programming"
-    #     )
-    # for i in range(len(url.entries)):
-    #     info = url.entries[i]
-    #     content= ProgContent()
-    #     content.headline= info.title
-    #     #-----finding image link
-    #     desc = info.description
-    #     start=desc.find("img src=")
-    #     end=desc.find("width")
-    #
-    #     print(desc[end:])
-    #     desc=desc[start+9:end-2:]
-    #     print("-----------------------------")
-    #     print(desc)
-    #
-    #     #---------------
-    #     content.img = desc
-    #     content.url  = info.link
-    #     content.save()
-
     return redirect('/')
 
 
