@@ -1,0 +1,31 @@
+{% extends 'links.html' %}
+
+{% load static %}
+
+{% block content %}
+
+<div class="container">
+     <h1>Inventory Management System</h1>
+     <div class="inv-columns" style="padding: 10px; margin: 20px;">
+     {% for p in inventory %}
+         <div class="inv" style="width: 18rem; border:5px black solid">
+             <div class="inv-body">
+             <a class="inv-name">Inventory: {{p.name}}</a>
+             <br>
+             <a class="inv-description">Availability: {{p.availability}}</a>
+             </div>
+         </div>
+      {% endfor %}
+      </div>
+
+      <div class="inv-columns" style="padding: 10px; margin: 20px;">
+      {% for p in supplier %}
+          <div class="inv" style="width: 18rem; border:5px black solid">
+              <div class="inv-body">
+              <a class="inv-name">Supplier: {{p.name}}</a>
+              </div>
+          </div>
+       {% endfor %}
+       </div>
+
+{% endblock %}

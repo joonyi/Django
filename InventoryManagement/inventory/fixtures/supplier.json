@@ -1,0 +1,64 @@
+[
+  {
+    "model": "inventory.supplier",
+    "pk": 1,
+    "fields": {
+      "name": "Ah Huat Auto"
+    }
+  },
+  {
+    "model": "inventory.inventory",
+    "pk": 1,
+    "fields": {
+      "name": "Tyres",
+      "description": "Food",
+      "note": "hot",
+      "stock": 3,
+      "availability": "True",
+      "supplier_id": 1
+    }
+  },
+  {
+    "model": "inventory.inventory",
+    "pk": 2,
+    "fields": {
+      "name": "Modem",
+      "description": "Food",
+      "note": "ward",
+      "stock": 12,
+      "availability": "True",
+      "supplier_id": 1
+    }
+  },
+  {
+    "model": "inventory.supplier",
+    "pk": 2,
+    "fields": {
+      "name": "Huawei Technologies"
+    }
+  },
+  {
+    "model": "inventory.inventory",
+    "pk": 3,
+    "fields": {
+      "name": "Table",
+      "description": "Drink",
+      "note": "In the sky",
+      "stock": 100,
+      "availability": "False",
+      "supplier_id": 2
+    }
+  },
+  {
+    "model": "inventory.inventory",
+    "pk": 4,
+    "fields": {
+      "name": "Circuit Breaker",
+      "description": "Utility",
+      "note": "It is here",
+      "stock": 56,
+      "availability": "True",
+      "supplier_id": 2
+    }
+  }
+]
