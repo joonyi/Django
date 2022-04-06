@@ -19,6 +19,11 @@ Enter your username and password
 python manage.py loaddata supplier
 ```
 
+## Run Server
+```
+python manage.py runserver
+```
+
 ## Test
 ```
 python manage.py test
